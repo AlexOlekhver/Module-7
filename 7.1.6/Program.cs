@@ -19,6 +19,10 @@ namespace _7._1._6
         public Obj(string name, string ownerName, int objLength, int count)
         {
             // ...
+            this.name = name;
+            owner = ownerName;
+            length = objLength;
+            this.count = count;
         }
     }
 }
