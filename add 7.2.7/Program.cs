@@ -7,6 +7,13 @@ namespace add_7._2._7
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            D d = new D();
+            E e = new E();
+
+            d.Display();
+            ((A)e).Display();
+            ((B)d).Display();
+            ((A)d).Display();
         }
     }
     class A
