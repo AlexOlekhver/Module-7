@@ -7,6 +7,8 @@ namespace _7._2._3
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            DerivedClass obj = new DerivedClass();
+            obj.Display();
         }
     }
 
@@ -22,6 +24,7 @@ class DerivedClass: BaseClass
 {
     public override void Display()
     {
+        base.Display();
         Console.WriteLine("Method of class DerivedClass");
     }
 }
