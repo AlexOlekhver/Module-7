@@ -9,11 +9,11 @@ namespace _7._6._2
             Console.WriteLine("Hello World!");
         }
     }
-    class Car<T>
-        where T: Engine
+    class Car<TEngine>
+        where TEngine: Engine
         {
-        public T Engine;
-        public virtual void ChangePart<T1>(T1 newPart) where T1: CarPart
+        public TEngine Engine;
+        public virtual void ChangePart<TPart>(TPart newPart) where TPart : CarPart
         {
 
         }
