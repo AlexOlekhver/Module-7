@@ -9,20 +9,20 @@ namespace _7._6._2
             Console.WriteLine("Hello World!");
         }
     }
-    class Car<TEngine>
+    abstract class Car<TEngine>
         where TEngine: Engine
-        {
+    {
         public TEngine Engine;
         public virtual void ChangePart<TPart>(TPart newPart) where TPart : CarPart
         {
 
         }
     }
-    class Engine
+    abstract class Engine
     {
 
     }
-    class CarPart
+    abstract class CarPart
     {
 
     }
@@ -43,6 +43,14 @@ namespace _7._6._2
 
     }
     class Wheel : CarPart
+    {
+
+    }
+    class GasCar
+    {
+
+    }
+    class ElectricCar
     {
 
     }
