@@ -10,30 +10,39 @@ namespace _7._6._2
         }
     }
     class Car<T>
-    {
+        where T: Engine
+        {
         public T Engine;
-        public virtual void ChangePart<T>(T newPart)
+        public virtual void ChangePart<T1>(T1 newPart) where T1: CarPart
         {
 
         }
     }
-    class ElectricEngine
+    class Engine
     {
 
     }
-    class GasEngine
+    class CarPart
     {
 
     }
-    class Battery
+    class ElectricEngine: Engine
     {
 
     }
-    class Differential
+    class GasEngine: Engine
     {
 
     }
-    class Wheel
+    class Battery: CarPart
+    {
+
+    }
+    class Differential : CarPart
+    {
+
+    }
+    class Wheel : CarPart
     {
 
     }
