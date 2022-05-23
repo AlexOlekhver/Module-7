@@ -116,6 +116,7 @@ namespace _7._7
             AlcoholDrink i1 = (AlcoholDrink)i;
             return i1;
         }
+
     }
 
     abstract class Delivery
@@ -155,7 +156,7 @@ namespace _7._7
         // ... Другие поля
     }
     enum Product : int
-    {
+        {
         banana,
         apple,
         potato,
